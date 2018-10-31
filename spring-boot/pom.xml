@@ -12,4 +12,11 @@
     <packaging>pom</packaging>
 
 
+    <modules>
+        <module>spring-boot-server</module>
+        <module>spring-boot-common</module>
+        <module>spring-boot-client</module>
+        <module>spring-boot-web</module>
+    </modules>
+
 </project>
