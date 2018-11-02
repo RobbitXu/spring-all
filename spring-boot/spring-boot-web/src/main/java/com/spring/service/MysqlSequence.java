@@ -1,6 +1,7 @@
 package com.spring.service;
 
 /**
+ * mysql 生成sequence
  * Created by admin on 2018/8/28.
  */
 public interface MysqlSequence {
