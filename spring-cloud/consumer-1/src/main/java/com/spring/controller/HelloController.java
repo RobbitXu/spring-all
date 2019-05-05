@@ -32,6 +32,8 @@ public class HelloController {
 
     @RequestMapping(value = "/helloConsumer",method = RequestMethod.GET)
     public String helloConsumer(){
-        return restTemplate.getForEntity("http://localhost:8083/indexPost",String.class).getBody();
+        System.out.println("1111");
+        return restTemplate.getForEntity("http://provider/indexGet",String.class).getBody();
     }
+
 }
