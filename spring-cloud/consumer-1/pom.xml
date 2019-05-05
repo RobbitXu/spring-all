@@ -56,6 +56,7 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -70,14 +71,30 @@
 		</dependencies>
 	</dependencyManagement>
 
+
 	<build>
+		<finalName>common-utils</finalName>
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!--编译插件-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<!-- 源代码使用的开发版本1.8 -->
+					<source>${jdk.version}</source>
+					<!-- 需要生成的目标class文件的编译版本1.8 -->
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
-
 
 </project>
