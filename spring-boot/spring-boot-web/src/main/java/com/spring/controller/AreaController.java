@@ -28,6 +28,10 @@ public class AreaController extends BaseController {
     AreaService areaService;
 
 
+//    @Autowired
+//    WordRepository wordRepository;
+
+
     /**
      * 根据等级查询地区编码
      * @param level
